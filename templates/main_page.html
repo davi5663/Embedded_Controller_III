@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontormiljø</title>
+  </head>
+  <body>
+    <style>
+        * {
+        box-sizing: border-box;
+         }
+
+      .h1_title {
+        text-align: center;
+      }
+      .p_title {
+        text-align: center;
+        font-weight: bold;
+      }
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+      }
+      .row:after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+      .sun_img{
+        width: 150px;
+      }
+    </style>
+    <h1 class="h1_title">Kontor Miljø</h1>
+    <p class="p_title">Tjek temperatur og fugtigheden</p>
+    <div class="row">
+        <div class="column">
+          <h2>Temperatur</h2>
+          <img src="https://jf-staeulalia.pt/img/other/20/collection-free-sun-cliparts.gif" style="width: 200px;">
+          <p>{{david2}}</p>
+        </div>
+        <div class="column">
+          <h2>Fugtigheden</h2>
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777610.png" style="width: 200px;">
+          <p>{{david}}</p>
+        </div>
+        <h1 class="h1_title">Sidste 5 målt temperatur og fugtighed på kontoret</h1>
+        <p>{{david3}}</p>
+  </body>
+</html>
