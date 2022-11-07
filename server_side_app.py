@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/api", methods = ['GET', 'POST'])
 def get():
-    db = connect(user = "db_davi5663", password="db_1234", host="localhost", database="sensor_data")
+    db = connect(user = "xxxx", password="xxxx", host="xxxx", database="xxxx")
     if request.method == 'GET':
         cur = db.cursor()
         cur.execute('''select * from data''')
@@ -20,7 +20,7 @@ def get():
         tempature = json["D_Temp"]
         humidity = json["D_Humy"] 
         cur = db.cursor()
-        sql = "insert into data ( D_Temp, D_Humy) values ( ?, ?)"
+        sql = "insert into xxxx ( D_Temp, D_Humy) values ( ?, ?)"
         try:
             cur.execute(sql, (tempature, humidity))
             db.commit()
