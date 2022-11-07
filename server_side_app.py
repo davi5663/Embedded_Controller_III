@@ -34,7 +34,7 @@ def get():
 
 @app.route("/")
 def home():
-    db = connect(user = "db_davi5663", password ="db_1234", host="localhost", database="sensor_data")
+    db = connect(user = "xxxx, password ="xxxx", host="xxxx", database="xxxx")
     cur = db.cursor()
     cur.execute ('''SELECT D_Humy from data ORDER BY D_ID Desc LIMIT 1''')
     humidity_result = cur.fetchone()
